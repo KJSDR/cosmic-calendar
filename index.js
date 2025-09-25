@@ -65,11 +65,7 @@ function setupVisualization() {
         .range([height - 60, 20])
         .padding(0.3);
 
-    // Create axes
-    const xAxis = d3.axisBottom(xScale)
-        .tickFormat(d3.timeFormat("%B"));  // Show month names
-    const yAxis = d3.axisLeft(yScale);
-
+    // Create axis groups (will be populated in updateVisualization)
     xAxisG = g.append("g")
         .attr("class", "axis")
         .attr("transform", `translate(0,${height - 40})`);
@@ -101,9 +97,25 @@ function updateVisualization() {
     const [startDate, endDate] = xScale.domain();
     const visibleEvents = cosmicEvents.filter(d => d.date >= startDate && d.date <= endDate);
 
-    // Update axes
-    const xAxis = d3.axisBottom(xScale)
-        .tickFormat(d3.timeFormat("%B"));  // Show month names
+    // Dynamic axis formatting based on zoom level
+    const timeSpan = endDate - startDate;
+    const days = timeSpan / (1000 * 60 * 60 * 24);
+    
+    let xAxis;
+    if (days > 300) {
+        // Full year view - show months
+        xAxis = d3.axisBottom(xScale).tickFormat(d3.timeFormat("%B"));
+    } else if (days > 25) {
+        // Month view - show days
+        xAxis = d3.axisBottom(xScale).tickFormat(d3.timeFormat("%b %d"));
+    } else if (days >= 1) {
+        // Day view - show hours
+        xAxis = d3.axisBottom(xScale).tickFormat(d3.timeFormat("%H:%M"));
+    } else {
+        // Hour view - show minutes
+        xAxis = d3.axisBottom(xScale).tickFormat(d3.timeFormat("%H:%M:%S"));
+    }
+    
     const yAxis = d3.axisLeft(yScale);
     
     xAxisG.call(xAxis);
