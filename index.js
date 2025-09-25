@@ -1,3 +1,6 @@
+// Cosmic Calendar Visualization
+// Main JavaScript file for the interactive timeline
+
 // Global variables
 let cosmicEvents = [];
 let xScale, yScale;
@@ -151,8 +154,6 @@ function updateVisualization() {
     g.selectAll(".event-dot")
         .on("mouseover", handleMouseOver)
         .on("mouseout", handleMouseOut);
-
-    updateStats(visibleEvents);
 }
 
 function handleMouseOver(event, d) {
@@ -179,23 +180,6 @@ function handleMouseOut(event, d) {
 
     // Hide tooltip
     tooltip.style("opacity", 0);
-}
-
-function updateStats(events) {
-    const stats = document.getElementById('stats');
-    const timeSpan = xScale.domain()[1] - xScale.domain()[0];
-    const days = timeSpan / (1000 * 60 * 60 * 24);
-    
-    if (days > 300) {
-        stats.textContent = `Viewing full year - ${events.length} major events across 13.8 billion years`;
-    } else if (days > 25) {
-        stats.textContent = `Viewing ${Math.round(days)} days - Notice how life accelerates in recent time!`;
-    } else if (days >= 1) {
-        stats.textContent = `Viewing ${Math.round(days)} day(s) - All of human history fits here`;
-    } else {
-        const hours = timeSpan / (1000 * 60 * 60);
-        stats.textContent = `Viewing ${Math.round(hours)} hour(s) - Written history is just minutes ago!`;
-    }
 }
 
 function updatePeriodInfo(label, range) {
