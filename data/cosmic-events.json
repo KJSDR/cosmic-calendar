@@ -1,198 +1,254 @@
 [
-    {
-      "date": "2024-01-01T00:00:00",
-      "name": "Big Bang",
-      "description": "The universe begins 13.8 billion years ago",
-      "type": "cosmic",
-      "importance": 10
-    },
-    {
-      "date": "2024-01-10T00:00:00",
-      "name": "First Stars Form",
-      "description": "The first generation of stars ignite",
-      "type": "cosmic",
-      "importance": 8
-    },
-    {
-      "date": "2024-01-22T00:00:00",
-      "name": "First Galaxies",
-      "description": "Galaxies begin to form and cluster",
-      "type": "cosmic",
-      "importance": 7
-    },
-    {
-      "date": "2024-05-01T00:00:00",
-      "name": "Milky Way Forms",
-      "description": "Our galaxy takes shape",
-      "type": "cosmic",
-      "importance": 8
-    },
-    {
-      "date": "2024-09-02T00:00:00",
-      "name": "Solar System Forms",
-      "description": "Our sun and planets form 4.6 billion years ago",
-      "type": "geological",
-      "importance": 9
-    },
-    {
-      "date": "2024-09-06T00:00:00",
-      "name": "Earth Forms",
-      "description": "Planet Earth forms from cosmic dust",
-      "type": "geological",
-      "importance": 9
-    },
-    {
-      "date": "2024-09-16T00:00:00",
-      "name": "First Life",
-      "description": "Simple single-celled organisms appear",
-      "type": "life",
-      "importance": 9
-    },
-    {
-      "date": "2024-10-15T00:00:00",
-      "name": "Photosynthesis",
-      "description": "Cyanobacteria begin producing oxygen",
-      "type": "life",
-      "importance": 8
-    },
-    {
-      "date": "2024-11-09T00:00:00",
-      "name": "Complex Cells",
-      "description": "Eukaryotic cells with nuclei evolve",
-      "type": "life",
-      "importance": 7
-    },
-    {
-      "date": "2024-12-05T00:00:00",
-      "name": "Multicellular Life",
-      "description": "First multicellular organisms",
-      "type": "life",
-      "importance": 8
-    },
-    {
-      "date": "2024-12-17T00:00:00",
-      "name": "Cambrian Explosion",
-      "description": "Rapid diversification of life forms",
-      "type": "life",
-      "importance": 8
-    },
-    {
-      "date": "2024-12-19T00:00:00",
-      "name": "First Fish",
-      "description": "Vertebrates appear in the oceans",
-      "type": "life",
-      "importance": 6
-    },
-    {
-      "date": "2024-12-20T00:00:00",
-      "name": "Plants on Land",
-      "description": "First plants colonize dry land",
-      "type": "life",
-      "importance": 7
-    },
-    {
-      "date": "2024-12-21T00:00:00",
-      "name": "Insects Appear",
-      "description": "First insects evolve",
-      "type": "life",
-      "importance": 5
-    },
-    {
-      "date": "2024-12-22T00:00:00",
-      "name": "Amphibians",
-      "description": "First animals leave the water",
-      "type": "life",
-      "importance": 6
-    },
-    {
-      "date": "2024-12-23T00:00:00",
-      "name": "First Forests",
-      "description": "Large forests cover the land",
-      "type": "life",
-      "importance": 5
-    },
-    {
-      "date": "2024-12-24T00:00:00",
-      "name": "Reptiles Evolve",
-      "description": "First reptiles appear",
-      "type": "life",
-      "importance": 5
-    },
-    {
-      "date": "2024-12-26T00:00:00",
-      "name": "Age of Dinosaurs",
-      "description": "Dinosaurs dominate the Earth",
-      "type": "life",
-      "importance": 7
-    },
-    {
-      "date": "2024-12-28T00:00:00",
-      "name": "Flowering Plants",
-      "description": "First flowering plants evolve",
-      "type": "life",
-      "importance": 5
-    },
-    {
-      "date": "2024-12-30T00:00:00",
-      "name": "Dinosaur Extinction",
-      "description": "Asteroid impact ends dinosaur reign",
-      "type": "geological",
-      "importance": 7
-    },
-    {
-      "date": "2024-12-31T06:00:00",
-      "name": "Early Primates",
-      "description": "First primates evolve",
-      "type": "life",
-      "importance": 6
-    },
-    {
-      "date": "2024-12-31T22:30:00",
-      "name": "Human Ancestors",
-      "description": "Homo sapiens appear",
-      "type": "human",
-      "importance": 8
-    },
-    {
-      "date": "2024-12-31T23:52:00",
-      "name": "Agriculture",
-      "description": "Humans begin farming",
-      "type": "human",
-      "importance": 8
-    },
-    {
-      "date": "2024-12-31T23:58:00",
-      "name": "Civilization",
-      "description": "First cities and writing",
-      "type": "human",
-      "importance": 7
-    },
-    {
-      "date": "2024-12-31T23:59:20",
-      "name": "Classical Antiquity",
-      "description": "Greek and Roman civilizations",
-      "type": "human",
-      "importance": 6
-    },
-    {
-      "date": "2024-12-31T23:59:50",
-      "name": "Scientific Revolution",
-      "description": "Modern science begins",
-      "type": "human",
-      "importance": 7
-    },
-    {
-      "date": "2024-12-31T23:59:58",
-      "name": "Industrial Revolution",
-      "description": "Steam power and factories",
-      "type": "human",
-      "importance": 7
-    },
-    {
-      "date": "2024-12-31T23:59:59",
-      "name": "Modern Era",
-      "description": "Electricity, computers, space travel",
-      "type": "human",
-      "importance": 8
-    }
-  ]
+  {
+    "date": "2024-01-01T00:00:00",
+    "name": "Big Bang",
+    "description": "The universe begins 13.8 billion years ago",
+    "type": "cosmic",
+    "importance": 10
+  },
+  {
+    "date": "2024-01-10T00:00:00",
+    "name": "First Stars Form",
+    "description": "The first generation of stars ignite",
+    "type": "cosmic",
+    "importance": 8
+  },
+  {
+    "date": "2024-01-22T00:00:00",
+    "name": "First Galaxies",
+    "description": "Galaxies begin to form and cluster",
+    "type": "cosmic",
+    "importance": 7
+  },
+  {
+    "date": "2024-05-01T00:00:00",
+    "name": "Milky Way Forms",
+    "description": "Our galaxy takes shape",
+    "type": "cosmic",
+    "importance": 8
+  },
+  {
+    "date": "2024-09-02T00:00:00",
+    "name": "Solar System Forms",
+    "description": "Our sun and planets form 4.6 billion years ago",
+    "type": "geological",
+    "importance": 9
+  },
+  {
+    "date": "2024-09-06T00:00:00",
+    "name": "Earth Forms",
+    "description": "Planet Earth forms from cosmic dust",
+    "type": "geological",
+    "importance": 9
+  },
+  {
+    "date": "2024-09-16T00:00:00",
+    "name": "First Life",
+    "description": "Simple single-celled organisms appear",
+    "type": "life",
+    "importance": 9
+  },
+  {
+    "date": "2024-10-15T00:00:00",
+    "name": "Photosynthesis",
+    "description": "Cyanobacteria begin producing oxygen",
+    "type": "life",
+    "importance": 8
+  },
+  {
+    "date": "2024-11-09T00:00:00",
+    "name": "Complex Cells",
+    "description": "Eukaryotic cells with nuclei evolve",
+    "type": "life",
+    "importance": 7
+  },
+  {
+    "date": "2024-12-05T00:00:00",
+    "name": "Multicellular Life",
+    "description": "First multicellular organisms",
+    "type": "life",
+    "importance": 8
+  },
+  {
+    "date": "2024-12-17T00:00:00",
+    "name": "Cambrian Explosion",
+    "description": "Rapid diversification of life forms",
+    "type": "life",
+    "importance": 8
+  },
+  {
+    "date": "2024-12-19T00:00:00",
+    "name": "First Fish",
+    "description": "Vertebrates appear in the oceans",
+    "type": "life",
+    "importance": 6
+  },
+  {
+    "date": "2024-12-20T00:00:00",
+    "name": "Plants on Land",
+    "description": "First plants colonize dry land",
+    "type": "life",
+    "importance": 7
+  },
+  {
+    "date": "2024-12-21T00:00:00",
+    "name": "Insects Appear",
+    "description": "First insects evolve",
+    "type": "life",
+    "importance": 5
+  },
+  {
+    "date": "2024-12-22T00:00:00",
+    "name": "Amphibians",
+    "description": "First animals leave the water",
+    "type": "life",
+    "importance": 6
+  },
+  {
+    "date": "2024-12-23T00:00:00",
+    "name": "First Forests",
+    "description": "Large forests cover the land",
+    "type": "life",
+    "importance": 5
+  },
+  {
+    "date": "2024-12-24T00:00:00",
+    "name": "Reptiles Evolve",
+    "description": "First reptiles appear",
+    "type": "life",
+    "importance": 5
+  },
+  {
+    "date": "2024-12-26T00:00:00",
+    "name": "Age of Dinosaurs",
+    "description": "Dinosaurs dominate the Earth",
+    "type": "life",
+    "importance": 7
+  },
+  {
+    "date": "2024-12-28T00:00:00",
+    "name": "Flowering Plants",
+    "description": "First flowering plants evolve",
+    "type": "life",
+    "importance": 5
+  },
+  {
+    "date": "2024-12-30T00:00:00",
+    "name": "Dinosaur Extinction",
+    "description": "Asteroid impact ends dinosaur reign",
+    "type": "geological",
+    "importance": 7
+  },
+  {
+    "date": "2024-12-31T06:00:00",
+    "name": "Early Primates",
+    "description": "First primates evolve",
+    "type": "life",
+    "importance": 6
+  },
+  {
+    "date": "2024-12-31T21:00:00",
+    "name": "Homo Habilis",
+    "description": "First tool-using human ancestor (~2.4 million years ago)",
+    "type": "human",
+    "importance": 7
+  },
+  {
+    "date": "2024-12-31T21:45:00",
+    "name": "Homo Erectus",
+    "description": "First human ancestor to leave Africa (~1.9 million years ago)",
+    "type": "human",
+    "importance": 7
+  },
+  {
+    "date": "2024-12-31T22:15:00",
+    "name": "Neanderthals",
+    "description": "Neanderthals appear in Europe (~400,000 years ago)",
+    "type": "human",
+    "importance": 7
+  },
+  {
+    "date": "2024-12-31T22:30:00",
+    "name": "Homo Sapiens",
+    "description": "Modern humans appear in Africa (~300,000 years ago)",
+    "type": "human",
+    "importance": 8
+  },
+  {
+    "date": "2024-12-31T23:40:00",
+    "name": "Cave Paintings",
+    "description": "Earliest known cave art (~40,000 years ago)",
+    "type": "human",
+    "importance": 6
+  },
+  {
+    "date": "2024-12-31T23:48:00",
+    "name": "Last Ice Age Ends",
+    "description": "Climate warms, enabling agriculture (~12,000 years ago)",
+    "type": "geological",
+    "importance": 7
+  },
+  {
+    "date": "2024-12-31T23:52:00",
+    "name": "Agriculture",
+    "description": "Humans begin farming",
+    "type": "human",
+    "importance": 8
+  },
+  {
+    "date": "2024-12-31T23:56:00",
+    "name": "Pyramids Built",
+    "description": "Great Pyramid of Giza constructed (~4,500 years ago)",
+    "type": "human",
+    "importance": 6
+  },
+  {
+    "date": "2024-12-31T23:58:00",
+    "name": "Civilization",
+    "description": "First cities and writing",
+    "type": "human",
+    "importance": 7
+  },
+  {
+    "date": "2024-12-31T23:59:20",
+    "name": "Classical Antiquity",
+    "description": "Greek and Roman civilizations",
+    "type": "human",
+    "importance": 6
+  },
+  {
+    "date": "2024-12-31T23:59:40",
+    "name": "Birth of Jesus Christ",
+    "description": "Beginning of the Common Era (~2,000 years ago)",
+    "type": "human",
+    "importance": 7
+  },
+  {
+    "date": "2024-12-31T23:59:50",
+    "name": "Scientific Revolution",
+    "description": "Modern science begins",
+    "type": "human",
+    "importance": 7
+  },
+  {
+    "date": "2024-12-31T23:59:56",
+    "name": "Declaration of Independence",
+    "description": "United States founded (~250 years ago)",
+    "type": "human",
+    "importance": 6
+  },
+  {
+    "date": "2024-12-31T23:59:58",
+    "name": "Industrial Revolution",
+    "description": "Steam power and factories",
+    "type": "human",
+    "importance": 7
+  },
+  {
+    "date": "2024-12-31T23:59:59",
+    "name": "Modern Era",
+    "description": "Electricity, computers, space travel",
+    "type": "human",
+    "importance": 8
+  }
+]
