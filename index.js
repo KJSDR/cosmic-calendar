@@ -62,16 +62,17 @@ function setupVisualization() {
 
     yScale = d3.scaleBand()
         .domain(Object.keys(colorMap))
-        .range([height - 100, 50])
-        .padding(0.1);
+        .range([height - 60, 20])
+        .padding(0.3);
 
     // Create axes
-    const xAxis = d3.axisBottom(xScale);
+    const xAxis = d3.axisBottom(xScale)
+        .tickFormat(d3.timeFormat("%B"));  // Show month names
     const yAxis = d3.axisLeft(yScale);
 
     xAxisG = g.append("g")
         .attr("class", "axis")
-        .attr("transform", `translate(0,${height - 50})`);
+        .attr("transform", `translate(0,${height - 40})`);
 
     yAxisG = g.append("g")
         .attr("class", "axis");
@@ -101,7 +102,8 @@ function updateVisualization() {
     const visibleEvents = cosmicEvents.filter(d => d.date >= startDate && d.date <= endDate);
 
     // Update axes
-    const xAxis = d3.axisBottom(xScale);
+    const xAxis = d3.axisBottom(xScale)
+        .tickFormat(d3.timeFormat("%B"));  // Show month names
     const yAxis = d3.axisLeft(yScale);
     
     xAxisG.call(xAxis);
