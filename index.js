@@ -207,5 +207,11 @@ function zoomToLastHour() {
     updateVisualization();
 }
 
+function zoomToFinalMinutes() {
+    xScale.domain([new Date(2024, 11, 31, 23, 55), new Date(2024, 11, 31, 23, 59, 59)]);
+    currentZoom = 'minutes';
+    updateVisualization();
+}
+
 // Initialize when page loads
 document.addEventListener('DOMContentLoaded', init);
