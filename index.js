@@ -65,7 +65,7 @@ function setupVisualization() {
         .range([height - 60, 20])
         .padding(0.3);
 
-    // Create axis groups (will be populated in updateVisualization)
+    // Create axis groups
     xAxisG = g.append("g")
         .attr("class", "axis")
         .attr("transform", `translate(0,${height - 40})`);
