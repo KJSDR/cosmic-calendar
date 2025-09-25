@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic Calendar - 13.8 Billion Years in One Year</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>The Cosmic Calendar</h1>
+        <p class="subtitle">13.8 billion years of universe history compressed into one calendar year</p>
+        
+        <div class="controls">
+            <div class="timeline-info">
+                <span class="current-period" id="current-period">Full Year View</span>
+                <br><span id="time-range">January 1 - December 31</span>
+            </div>
+            <div class="zoom-buttons">
+                <button onclick="resetZoom()">Full Year</button>
+                <button onclick="zoomToDecember()">December (Life Explodes)</button>
+                <button onclick="zoomToLastDay()">Dec 31 (Humans)</button>
+                <button onclick="zoomToLastHour()">Final Hour</button>
+            </div>
+        </div>
+
+        <div class="timeline-container">
+            <div id="timeline"></div>
+        </div>
+
+        <div class="legend">
+            <div class="legend-item">
+                <div class="legend-color" style="background: #ff6b6b;"></div>
+                <span>Cosmic Events</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #4ecdc4;"></div>
+                <span>Geological Events</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #45b7d1;"></div>
+                <span>Life Events</span>
+            </div>
+            <div class="legend-item">
+                <div class="legend-color" style="background: #ffa726;"></div>
+                <span>Human Events</span>
+            </div>
+        </div>
+
+        <div class="stats" id="stats">
+            Zoom in to see how recent human history really is!
+        </div>
+    </div>
+
+    <div class="tooltip" id="tooltip"></div>
+
+    <script src="index.js"></script>
+</body>
+</html>
