@@ -2,7 +2,13 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 20px;
-    background: linear-gradient(135deg, #0c0c0c 0%, #1a1a2e 50%, #16213e 100%);
+    background: 
+        linear-gradient(135deg, rgba(12, 12, 12, 0.7) 0%, rgba(26, 26, 46, 0.8) 50%, rgba(22, 33, 62, 0.7) 100%),
+        url('space1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     color: white;
     min-height: 100vh;
 }

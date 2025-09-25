@@ -1,6 +1,3 @@
-// Cosmic Calendar Visualization
-// Main JavaScript file for the interactive timeline
-
 // Global variables
 let cosmicEvents = [];
 let xScale, yScale;
