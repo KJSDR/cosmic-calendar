@@ -182,37 +182,28 @@ function handleMouseOut(event, d) {
     tooltip.style("opacity", 0);
 }
 
-function updatePeriodInfo(label, range) {
-    document.getElementById('current-period').textContent = label;
-    document.getElementById('time-range').textContent = range;
-}
-
 // Zoom functions (called by buttons in HTML)
 function resetZoom() {
     xScale.domain([new Date(2024, 0, 1), new Date(2024, 11, 31, 23, 59, 59)]);
     currentZoom = 'year';
-    updatePeriodInfo('Full Year View', 'January 1 - December 31');
     updateVisualization();
 }
 
 function zoomToDecember() {
     xScale.domain([new Date(2024, 11, 1), new Date(2024, 11, 31, 23, 59, 59)]);
     currentZoom = 'month';
-    updatePeriodInfo('December - Life Explodes', 'Complex life emerges');
     updateVisualization();
 }
 
 function zoomToLastDay() {
     xScale.domain([new Date(2024, 11, 31, 0, 0), new Date(2024, 11, 31, 23, 59, 59)]);
     currentZoom = 'day';
-    updatePeriodInfo('December 31 - The Human Day', 'All of human evolution');
     updateVisualization();
 }
 
 function zoomToLastHour() {
     xScale.domain([new Date(2024, 11, 31, 23, 0), new Date(2024, 11, 31, 23, 59, 59)]);
     currentZoom = 'hour';
-    updatePeriodInfo('Final Hour - Human Civilization', 'All of recorded history');
     updateVisualization();
 }
 
