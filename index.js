@@ -182,7 +182,7 @@ function handleMouseOut(event, d) {
     tooltip.style("opacity", 0);
 }
 
-// Zoom functions (called by buttons in HTML)
+// zoom funcs html
 function resetZoom() {
     xScale.domain([new Date(2024, 0, 1), new Date(2024, 11, 31, 23, 59, 59)]);
     currentZoom = 'year';
@@ -213,5 +213,5 @@ function zoomToFinalMinutes() {
     updateVisualization();
 }
 
-// Initialize when page loads
+// init when page loads?
 document.addEventListener('DOMContentLoaded', init);
